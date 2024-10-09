@@ -33,20 +33,20 @@ const createContact = async (contact) => {
     return result;
 };
 
-// Función para mostrar mensajes con íconos
+
 const showMessage = (text, type) => {
     const messageElement = document.getElementById("message");
-    messageElement.innerHTML = ''; // Limpiar contenido anterior
+    messageElement.innerHTML = ''; 
 
-    // Crear icono
+
     const icon = document.createElement("i");
     icon.classList.add("icon-circle");
     
-    // Asignar el ícono según el tipo de mensaje
+  
     if (type === "success") {
-        icon.classList.add("fas", "fa-check-circle"); // Ícono de check
+        icon.classList.add("fas", "fa-check-circle"); 
     } else if (type === "error") {
-        icon.classList.add("fas", "fa-times-circle"); // Ícono de X
+        icon.classList.add("fas", "fa-times-circle"); 
     }
 
     messageElement.appendChild(icon);
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         modal.style.display = "none";
     };
 
-    // Evento para el formulario de agregar contacto
+
     contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         const nombre = document.getElementById("nombre").value.trim();
