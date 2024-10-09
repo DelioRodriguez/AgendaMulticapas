@@ -94,7 +94,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Estilos del Modal */
+
 .modal {
     display: none; 
     position: fixed;
